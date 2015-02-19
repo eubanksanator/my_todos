@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-
-  devise_for :users
-  root 'todos#index'
-
   # Routes for the Todo resource:
   # CREATE
   get '/todos/new',      :controller => 'todos', :action => 'new',    :as => 'new_todo'
